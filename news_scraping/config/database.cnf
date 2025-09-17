@@ -1,0 +1,6 @@
+[client]
+database = myapp_production
+user = admin
+password = 978031536
+host = database-bigconnect.c788ei8g6wng.ap-southeast-2.rds.amazonaws.com
+port = 3306
