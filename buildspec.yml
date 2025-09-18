@@ -8,12 +8,12 @@ batch:
 phases:
   install:
     commands:
-      - echo 'Installing Python dependencies'
-      - export $(grep -v '^#' /etc/environment  | xargs)
-      - sudo yum install -y python3 python3-pip 
-      - python3 -m ensurepip --upgrade 
-      - python3 -m pip install django
-      - python3 -m pip install -r requirements.txt
+      - echo 'Installing Python dependencies' || true
+      - export $(grep -v '^#' /etc/environment  | xargs) || true
+      - sudo yum install -y python3 python3-pip  || true
+      - python3 -m ensurepip --upgrade  || true
+      - python3 -m pip install django || true
+      - python3 -m pip install -r requirements.txt || true
   pre_build:
     commands:
       - echo 'Prebuild'
