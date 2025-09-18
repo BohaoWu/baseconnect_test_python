@@ -1,0 +1,4 @@
+hooks:
+  ApplicationStart:
+    - location: ./postScript.sh
+      runas: ubuntu
