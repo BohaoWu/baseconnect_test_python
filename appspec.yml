@@ -1,4 +1,4 @@
 hooks:
   ApplicationStart:
-    - location: ./postScript.sh
-      runas: ubuntu
+    - location: scripts/postScript.sh
+      runas: root
